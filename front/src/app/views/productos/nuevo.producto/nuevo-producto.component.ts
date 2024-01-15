@@ -43,7 +43,7 @@ export class NuevoProductoComponent {
           Nombre: res.Nombre,
           Precio: res.Precio,
           Cantidad: res.Cantidad,
-          FechaIngreso: res.FechaIngreso,
+ 
 
         });
       });
