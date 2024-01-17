@@ -6,7 +6,7 @@
     <div class="card-body">
     <form [formGroup]="stock" (ngSubmit)="grabar()">
     <div class="mb-2">
-     <label for="ProductoId"> Id Producto </label>
+     <label for="ProductoId"> Producto </label>
      <input type="text" class="form-control" formControlName="ProductoId"/>
      @if (stock.invalid && (stock.dirty || stock.touched)) {
         <div class="alert">
@@ -17,7 +17,7 @@
         }
     </div>
     <div class="mb-2">
-        <label for="ProveedorId"> Id Proveedor </label>
+        <label for="ProveedorId"> Proveedor </label>
         <input type="text" class="form-control" formControlName="ProveedorId"/>
         @if (stock.invalid && (stock.dirty || stock.touched)) {
            <div class="alert">

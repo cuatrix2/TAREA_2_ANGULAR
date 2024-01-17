@@ -4,5 +4,7 @@ export interface IStock {
     ProveedorId: number;
     Cantidad: number;
     Precio_Venta: number;
+    producto: string;
+    proveedor: string;
   }
   
