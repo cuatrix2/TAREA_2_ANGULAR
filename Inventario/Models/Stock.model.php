@@ -7,7 +7,7 @@ class Clase_Stock
         try {
             $con = new Clase_Conectar_Base_Datos();
             $con = $con->ProcedimientoConectar();
-            $cadena = "SELECT * FROM `Stocks`";
+            $cadena = "SELECT stocks.*, productos.Nombre as producto, proveedores.Nombres as proveedor FROM stocks INNER JOIN proveedores ON stocks.ProveedorId = proveedores.ProveedorId INNER JOIN productos ON stocks.ProductoId= productos.ProductoId";
             $result = mysqli_query($con, $cadena);
             return $result;
         } catch (Throwable $th) {

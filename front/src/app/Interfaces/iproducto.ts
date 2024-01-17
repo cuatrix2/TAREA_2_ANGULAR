@@ -3,6 +3,6 @@ export interface IProducto {
     Nombre: string;
     Precio: number;
     Cantidad: number;
-    FechaIngreso: string;
+    FechaIngreso: number;
   }
   
